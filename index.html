@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PS Code Challenge</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="home-header">
+        <div class="home-header-left">
+            <div><a>✉ info@shoppy.com</a> <a> ✆ 453-5553-996</a></div>
+        </div>
+          <div class="home-header-right">
+              <p>some social media buttons here</p>
+          </div>
+    </div>
+<div class="hline"></div>
+<div class="navigation-bar">
+    <div class="nav-left">
+        <div class="logo">Logo</div>
+        <button id="homeButton" class="navigation-Button">Home</button>
+        <button id="productsButton" class="navigation-Button active">Products</button>
+        <button id="dealsButton" class="navigation-Button">Hot Deals</button>
+        <button id="aboutButton" class="navigation-Button">About</button>
+        <button id="contactButton" class="navigation-Button">Contact</button>
+    </div>
+    <div class="nav-right">
+        <p>search profile cart</p>
+    </div>
+</div>
+<div class="hline"></div>
+<div class="mainContent">
+    <div class="slider">
+        <div class="slides">
+            <div id="boots-slide"><img src="boots.PNG" alt="boots"></div>
+            <div id="pants-slide"><img src="pants.PNG" alt="pants"></div>
+            <div id="jacket-slide" class="active"><img src="jacket.PNG" alt="jacket"> </div>
+        </div>
+        <div class="slider-bar">
+            <a href="#boots-slide"><img src="boots.PNG" class="slider-image" alt="boots"></a>
+            <a href="#pants-slide"><img src="pants.PNG" class="slider-image" alt="pants"></a>
+            <a href="#jacket-slide"><img src="jacket.PNG" class="slider-image" alt="jacket"></a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-body">
+            <h1>FULL WINTER KIT</h1>
+            <h2>Half Jacket + Skinny Trousers + Boot leather </h2>
+            <p>Here is a lovely description of the product. In a fully functioning site I would need to retrieve this info instead of hard-coding it!</p>
+        </div>
+        <div class="hline"></div>
+        <div class="selection">
+            <div class="size-selection">
+                <label>Choose Size</label>
+                <input type="radio" id="small" name="size" value="small"  checked><label for="small">S</label>
+                <input type="radio" id="medium" name="size" value="medium"><label for="medium">M</label>
+                <input type="radio" id="large" name="size" value="large"><label for="large">L</label>
+                <input type="radio" id="extra-large" name="size" value="extra-large"><label for="extra-large">XL</label>
+            </div>
+            <div class="quantity-selection">
+                <label>Choose Quantity</label>
+                <button id="addButton" onclick="addQuantity()">+</button>
+                <div id="quantity">1</div>
+                <button id="subtractButton" onclick="subtractQuantity()">-</button>
+            </div>
+        </div>
+        <div class="hline"></div>
+        <div class="order">
+            <div class="price">Price: <div id="price" >100</div>$</div>
+            <button class="rounded-btn">Order Now</button>
+        </div>
+    </div>
+</div>
+<div class="secondary-content">
+    <h3>Related Products</h3>
+    <h4>Some dummy text for whatever might be here</h4>
+    <div class="related-products">
+        <img src="product1.PNG" alt="red reebok track jacket">
+        <img src="product2.PNG" alt="grey reebok track jacket">
+        <img src="product3.PNG" alt="pink reebok track jacket">
+        <img src="product4.PNG" alt="red reebok track jacket">
+    </div>
+
+    <div class="news-letter">
+    <div class="news-info">
+        <h1 style="font-size:1em; margin-right:2em">NEWS LETTER</h1>
+        <h2>join us now to get all news and special offers</h2>
+    </div>
+    <div class="email-input">
+        <label>✉</label>
+        <input type="text" id="email" placeholder="type your email here">
+    </div>
+    <button class="square-btn">join us</button>
+</div>
+</div>
+<div class="footer">
+    <div class="logo">Logo</div>
+    <div class="footer-links">
+        <ul>
+            <li><a>our feed</a></li>
+            <li><a>terms and conditions</a></li>
+            <li><a>our privacy</a></li>
+        </ul>
+        <ul>
+            <li><a>join us</a></li>
+            <li><a>live support</a></li>
+        </ul>
+    </div>
+    <img src="payment.PNG" alt="payment methods" class="payment-methods"></img>
+</div>
+</body>
+</html>
